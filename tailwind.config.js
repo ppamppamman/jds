@@ -1,7 +1,7 @@
 import colorVariants from "./src/foundations/colors";
 import typographyVariants from "./src/foundations/typography";
 
-const typographyPlugin = ({ addUtilities }) => {
+const typographyPlugin = ({ addComponents }) => {
   const typographyUtilities = {};
   
   Object.entries(typographyVariants).forEach(([styleName, variants]) => {
@@ -19,7 +19,7 @@ const typographyPlugin = ({ addUtilities }) => {
     });
   });
 
-  addUtilities(typographyUtilities);
+  addComponents(typographyUtilities);
 }
 
 const config = {
