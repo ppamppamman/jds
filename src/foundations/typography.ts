@@ -54,13 +54,13 @@ const typographyVariants = {
       fontSize: typographyTokens.fontSize.t10,
       lineHeight: typographyTokens.lineHeight.t10,
       fontWeight: typographyTokens.fontWeight.regular,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
     bold: {
       fontSize: typographyTokens.fontSize.t10,
       lineHeight: typographyTokens.lineHeight.t10,
       fontWeight: typographyTokens.fontWeight.bold,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
   },
   headline2: {
@@ -68,13 +68,13 @@ const typographyVariants = {
       fontSize: typographyTokens.fontSize.t9,
       lineHeight: typographyTokens.lineHeight.t9,
       fontWeight: typographyTokens.fontWeight.regular,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
     bold: {
       fontSize: typographyTokens.fontSize.t9,
       lineHeight: typographyTokens.lineHeight.t9,
       fontWeight: typographyTokens.fontWeight.bold,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
   },
   headline3: {
@@ -82,13 +82,13 @@ const typographyVariants = {
       fontSize: typographyTokens.fontSize.t8,
       lineHeight: typographyTokens.lineHeight.t8,
       fontWeight: typographyTokens.fontWeight.regular,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
     bold: {
       fontSize: typographyTokens.fontSize.t8,
       lineHeight: typographyTokens.lineHeight.t8,
       fontWeight: typographyTokens.fontWeight.bold,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.black,
     },
   },
   body1: {
