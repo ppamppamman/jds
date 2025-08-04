@@ -265,10 +265,6 @@ export const SemanticColors: Story = {
                 <div className="w-4 h-4 bg-semantic-error rounded"></div>
                 <span>테두리: semantic-error</span>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-semantic-error/20 rounded"></div>
-                <span>링: semantic-error/20</span>
-              </div>
             </div>
           </div>
 
