@@ -5,21 +5,26 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
   {
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+          "bg-semantic-primary text-semantic-text-white shadow-sm hover:bg-palette-green-600 focus-visible:ring-palette-green-300 disabled:bg-palette-gray-300 disabled:text-palette-gray-500",
         destructive:
-          "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "bg-semantic-error text-semantic-text-white shadow-sm hover:bg-palette-red-600 focus-visible:ring-palette-red-300 disabled:bg-palette-gray-300 disabled:text-palette-gray-500",
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "border border-semantic-border bg-semantic-background text-semantic-text-primary shadow-sm hover:bg-palette-gray-200 hover:text-semantic-text-primary focus-visible:ring-palette-gray-400 disabled:border-palette-gray-300 disabled:bg-transparent disabled:text-palette-gray-400",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+          "bg-semantic-secondary text-semantic-text-white shadow-sm hover:bg-palette-gray-600 focus-visible:ring-palette-gray-400 disabled:bg-palette-gray-300 disabled:text-palette-gray-500",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "text-semantic-text-primary hover:bg-palette-gray-200 hover:text-semantic-text-primary focus-visible:ring-palette-gray-400 disabled:text-palette-gray-400",
+        link: 
+          "text-semantic-primary underline-offset-4 hover:underline focus-visible:ring-palette-green-300 disabled:text-palette-gray-400 disabled:no-underline",
+        success:
+          "bg-semantic-success text-semantic-text-white shadow-sm hover:bg-palette-blue-600 focus-visible:ring-palette-blue-300 disabled:bg-palette-gray-300 disabled:text-palette-gray-500",
+        warning:
+          "bg-semantic-warning text-semantic-text-black shadow-sm hover:bg-palette-yellow-600 focus-visible:ring-palette-yellow-300 disabled:bg-palette-gray-300 disabled:text-palette-gray-500",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
