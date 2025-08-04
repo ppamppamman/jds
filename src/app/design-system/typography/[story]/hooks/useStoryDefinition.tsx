@@ -217,10 +217,10 @@ const COMPREHENSIVE_STORY_DEFINITIONS = [
         <div className="mt-8 p-4 bg-blue-50 rounded">
           <h4 className="typography-headline3-bold mb-3">코드 예시</h4>
           <div className="space-y-2 text-sm font-mono bg-white p-3 rounded">
-            <div>&lt;h1 className="typography-headline1-bold"&gt;페이지 제목&lt;/h1&gt;</div>
-            <div>&lt;h2 className="typography-headline2"&gt;섹션 제목&lt;/h2&gt;</div>
-            <div>&lt;p className="typography-body1"&gt;본문 텍스트&lt;/p&gt;</div>
-            <div>&lt;span className="typography-caption1"&gt;캡션&lt;/span&gt;</div>
+            <div>{`<h1 className="typography-headline1-bold">페이지 제목</h1>`}</div>
+            <div>{`<h2 className="typography-headline2">섹션 제목</h2>`}</div>
+            <div>{`<p className="typography-body1">본문 텍스트</p>`}</div>
+            <div>{`<span className="typography-caption1">캡션</span>`}</div>
           </div>
         </div>
       </div>
