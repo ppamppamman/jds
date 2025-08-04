@@ -1,17 +1,16 @@
 # Sample Design System
 
-컴포넌트 기반 디자인 시스템으로 재사용 가능한 UI 컴포넌트를 제공합니다.
+컴포넌트 기반 디자인 시스템으로 재사용 가능한 UI 컴포넌트를 제공합니다. 
+참고 : https://jds-eight.vercel.app/
 
 ## 활용한 도구
 
-- **Next.js 15** - React 프레임워크
-- **React 19** - UI 라이브러리
-- **TypeScript 5** - 타입 안전성
-- **Tailwind CSS 4** - 유틸리티 기반 CSS 프레임워크
-  - **Class Variance Authority** - 조건부 클래스 생성
-  
-- **Storybook 9** - 컴포넌트 문서화 및 개발
+- **TypeScript**, **Next.js**, **React** - 언어와 프레임워크
+- **TailwindCSS** - 유틸리티 기반 CSS 프레임워크
+  - **CVA** - 조건부 클래스 생성도구
 - **Shadcn/ui** - Radix UI 기반의 헤드리스 컴포넌트
+
+- **Storybook** - 컴포넌트 문서화 및 개발
 - **Lucide React** - 아이콘 라이브러리
 - **Vitest** - 테스트 프레임워크
 
