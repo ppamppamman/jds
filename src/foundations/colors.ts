@@ -75,7 +75,7 @@ const semanticColors = {
   background: colorPalette.gray[100], 
   border: colorPalette.gray[1000],
   text: {
-    primary: colorPalette.static.black,
+    primary: colorPalette.gray[1000],
     secondary: colorPalette.gray[800],
     disabled: colorPalette.gray[400],
     black: colorPalette.static.black,
