@@ -1,7 +1,8 @@
 # Sample Design System
 
-컴포넌트 기반 디자인 시스템으로 재사용 가능한 UI 컴포넌트를 제공합니다. 
-참고 : https://jds-eight.vercel.app/
+컴포넌트 기반 디자인 시스템으로 재사용 가능한 UI 컴포넌트를 제공합니다.   
+- 참고 docs : https://jds-eight.vercel.app/  
+- 참고 storybook : https://jds-storybook.vercel.app/ 
 
 ## 활용한 도구
 
