@@ -224,28 +224,18 @@ src/
 └── vitest.setup.ts
 ```
 
-## 🧪 테스트
-
-- **Vitest**: 컴포넌트 단위 테스트
-- **Playwright**: 브라우저 테스트  
-- **Storybook Addon A11y**: 접근성 테스트
-- **Storybook Addon Vitest**: Storybook 내 테스트 실행
-
-## 🔧 설정 파일
+## 설정 파일
 
 - `tailwind.config.js`: Tailwind CSS 설정 (컬러/타이포그래피 토큰 포함)
 - `components.json`: shadcn/ui 설정 (New York 스타일)
 - `vitest.config.ts`: 테스트 설정
 - `tsconfig.json`: TypeScript 설정
 
-## 📚 기여 가이드
 
-1. 새로운 컴포넌트 추가 시 `src/components/ui/` 하위에 폴더 생성
-2. 각 컴포넌트마다 Storybook stories 파일 작성
-3. 디자인 토큰은 `src/foundations/` 에서 관리
-4. 모든 컴포넌트는 Radix UI 기반으로 접근성 고려
-5. Class Variance Authority로 variant 관리
+## 구성 의도
+
+- headless ui인 shadcn/ui 를 바탕으로 tailwindcss를 적용했을 때 어떤 형태로 컴포넌트가 개발될 수 있는지 제시합니다.
+- 파운데이션 요소로 두고 판단할 것과 컴포넌트 요소로 두고 판단할 것을 분리할 수 있습니다.
+- 스펙과 관련된 작성은 storybook을 기준으로 작성합니다. nextjs 프로젝트는 외부 공개용으로 작성되었습니다.
 
 ---
-
-> 이 디자인 시스템은 일관성, 재사용성, 접근성을 중심으로 설계되었습니다.
