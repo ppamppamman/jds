@@ -73,7 +73,7 @@ const semanticColors = {
   error: colorPalette.red[500],       
 
   background: colorPalette.gray[100], 
-  border: colorPalette.gray[1000],
+  border: colorPalette.gray[400],
   text: {
     primary: colorPalette.gray[1000],
     secondary: colorPalette.gray[800],
