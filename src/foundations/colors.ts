@@ -84,6 +84,6 @@ const semanticColors = {
 } as const;
 
 export default {
-  palette : colorPalette,
+  palette: colorPalette,
   semantic: semanticColors,
 }

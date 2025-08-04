@@ -1,10 +1,10 @@
-import designTokens from "./src/foundations/design-tokens";
+import colorTokens from "./src/foundations/colors";
 
 const config = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
-      colors: designTokens,
+      colors: colorTokens,
     },
   },
 };
