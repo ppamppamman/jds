@@ -16,7 +16,7 @@ export const NavWidget = ({ name }: Props) => {
           Typography
         </Link>
         <span>/</span>
-        <span className="text-semantic-text-primary">{name}</span>
+        <span className="text-semantic-primary">{name}</span>
       </div>
     </nav>
   )
