@@ -4,7 +4,7 @@ type Props = {
   description: string
 }
 
-export const HeaderWidget = ({ name, category, description }: Props) => {
+export const StoryDefinitionHeader = ({ name, category, description }: Props) => {
   return (
     <div className="mb-12">
       <div className="flex items-center gap-3 mb-4">
