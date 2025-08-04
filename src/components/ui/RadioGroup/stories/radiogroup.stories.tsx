@@ -39,6 +39,14 @@ type Story = StoryObj<typeof meta>
 
 // 가로 레이아웃
 export const Horizontal: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">라이트</span>, value: 'light' },
+      { label: <span className="typography-body2">다크</span>, value: 'dark' },
+      { label: <span className="typography-body2">시스템</span>, value: 'system' },
+    ],
+    direction: 'horizontal',
+  },
   render: () => {
     const [value, setValue] = useState('light')
     
@@ -65,6 +73,17 @@ export const Horizontal: Story = {
 
 // 많은 옵션들
 export const ManyOptions: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">신용카드</span>, value: 'card' },
+      { label: <span className="typography-body2">계좌이체</span>, value: 'bank' },
+      { label: <span className="typography-body2">휴대폰 결제</span>, value: 'mobile' },
+      { label: <span className="typography-body2">카카오페이</span>, value: 'kakaopay' },
+      { label: <span className="typography-body2">네이버페이</span>, value: 'naverpay' },
+      { label: <span className="typography-body2">페이코</span>, value: 'payco' },
+    ],
+    direction: 'vertical',
+  },
   render: () => {
     const [value, setValue] = useState('card')
     
@@ -94,6 +113,13 @@ export const ManyOptions: Story = {
 
 // 비활성화 상태
 export const Disabled: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2 text-semantic-text-disabled">옵션 1</span>, value: 'option1' },
+      { label: <span className="typography-body2 text-semantic-text-disabled">옵션 2</span>, value: 'option2' },
+    ],
+    disabled: true,
+  },
   render: () => {
     const [value1, setValue1] = useState('option1')
     const [value2, setValue2] = useState('enabled1')
@@ -135,6 +161,13 @@ export const Disabled: Story = {
 
 // 에러 상태
 export const ErrorState: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">이용약관에 동의합니다</span>, value: 'agree' },
+      { label: <span className="typography-body2">이용약관에 동의하지 않습니다</span>, value: 'disagree' },
+    ],
+    required: true,
+  },
   render: () => {
     const [value, setValue] = useState('')
     
@@ -165,6 +198,22 @@ export const ErrorState: Story = {
 
 // 복잡한 레이블
 export const ComplexLabels: Story = {
+  args: {
+    options: [
+      { 
+        label: (
+          <div className="flex-1 p-3 border border-semantic-border rounded-lg hover:bg-palette-gray-100">
+            <div className="typography-body2-bold">베이직 플랜</div>
+            <p className="typography-caption1 text-semantic-text-secondary mt-1">
+              월 ₩9,900 • 기본 기능 • 5GB 저장공간
+            </p>
+          </div>
+        ), 
+        value: 'basic' 
+      },
+    ],
+    direction: 'vertical',
+  },
   render: () => {
     const [value, setValue] = useState('pro')
     
@@ -221,6 +270,12 @@ export const ComplexLabels: Story = {
 
 // 모든 상태를 보여주는 종합 스토리
 export const AllStates: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">선택되지 않은 옵션</span>, value: 'option1' },
+      { label: <span className="typography-body2">선택된 옵션</span>, value: 'option2' },
+    ],
+  },
   render: () => {
     const [basicValue, setBasicValue] = useState('option2')
     const [horizontalValue, setHorizontalValue] = useState('horizontal2')
@@ -315,6 +370,13 @@ export const AllStates: Story = {
 
 // 시맨틱 컬러 정보
 export const SemanticColors: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">일반 옵션</span>, value: 'demo1' },
+      { label: <span className="typography-body2">비활성화 옵션 1</span>, value: 'disabled-demo1' },
+      { label: <span className="typography-body2">비활성화 옵션 2</span>, value: 'disabled-demo2' },
+    ],
+  },
   render: () => {
     const [normalValue, setNormalValue] = useState('demo1')
     const [disabledValue, setDisabledValue] = useState('disabled-demo1')
@@ -420,6 +482,13 @@ export const SemanticColors: Story = {
 
 // 사용 예시 스토리
 export const UsageExamples: Story = {
+  args: {
+    options: [
+      { label: <span className="typography-body2">모든 알림 받기</span>, value: 'all' },
+      { label: <span className="typography-body2">중요한 알림만 받기</span>, value: 'important' },
+      { label: <span className="typography-body2">알림 받지 않기</span>, value: 'none' },
+    ],
+  },
   render: () => {
     const [notificationValue, setNotificationValue] = useState('all')
     const [languageValue, setLanguageValue] = useState('ko')
