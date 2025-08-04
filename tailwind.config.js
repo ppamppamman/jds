@@ -1,7 +1,7 @@
-import designTokens from "@/foundations/design-tokens";
+import designTokens from "./src/foundations/design-tokens";
 
 const config = {
-  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: designTokens,
