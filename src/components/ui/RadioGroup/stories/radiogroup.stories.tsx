@@ -317,7 +317,6 @@ export const AllStates: Story = {
 export const SemanticColors: Story = {
   render: () => {
     const [normalValue, setNormalValue] = useState('demo1')
-    const [errorValue, setErrorValue] = useState('')
     const [disabledValue, setDisabledValue] = useState('disabled-demo1')
     
     return (
