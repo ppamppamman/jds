@@ -83,7 +83,9 @@ const semanticColors = {
   },
 } as const;
 
-export default {
+const colorVariants = {
   palette: colorPalette,
   semantic: semanticColors,
 }
+
+export default colorVariants;
