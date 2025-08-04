@@ -9,7 +9,6 @@ import { cva } from "class-variance-authority"
 
 type Props = { 
   options: readonly {label: React.ReactNode, value: string; disabled?: boolean }[];
-  onChange: (value: string) => void;
   direction?: "horizontal" | "vertical";
 } & React.ComponentProps<typeof RadioGroupPrimitive.Root>;
 
@@ -25,7 +24,6 @@ const groupVariants = cva('inline-flex grow-0', {
 function RadioGroup({
   className,
   options,
-  onChange,
   direction = "vertical",
   ...props
 }: Props) {
@@ -34,7 +32,6 @@ function RadioGroup({
     <RadioGroupPrimitive.Root
       data-slot="radio-group"
       className={cn(groupVariants({ direction }), className)}
-      onValueChange={onChange}
       {...props}
     >
       {options.map((option) => (
