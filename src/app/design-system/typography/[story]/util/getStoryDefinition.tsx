@@ -243,7 +243,7 @@ const stories: (SingleStoryDefinition | ComprehensiveStoryDefinition)[] = [
   ...COMPREHENSIVE_STORY_DEFINITIONS.map(story => ({ ...story, category: 'Comprehensive', type: 'comprehensive-typography' as const }))
 ]
 
-export const useStoryDefinition = (storyId: string) => { 
+export const getStoryDefinition = (storyId: string) => { 
   const story = stories.find(s => s.id === storyId)
   return story
 }

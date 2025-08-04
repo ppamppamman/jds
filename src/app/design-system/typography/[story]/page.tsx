@@ -6,9 +6,7 @@ import { HeaderWidget as Header} from './widgets/Header'
 import { NavWidget as Nav } from './widgets/Nav'
 import { StoryDefinitionCodeWidget as StoryDefinitionCode } from './widgets/StoryDefinitionCode'
 
-import { generateStoryDefinitionStaticParams, getStoryDefinitions, useStoryDefinition } from './hooks/useStoryDefinition'
-
-const { renderToStaticMarkup } = await import("react-dom/server");
+import { generateStoryDefinitionStaticParams, getStoryDefinition, getStoryDefinitions } from './util/getStoryDefinition'
 
 const stories = getStoryDefinitions()
 
@@ -17,8 +15,11 @@ export async function generateStaticParams() {
   return slugs;
 }
 
-export default function StoryPage({ params }: { params: { story: string } }) {
-  const storyDefinition = useStoryDefinition(params.story)
+export default async function StoryPage({ params }: { params: Promise<{ story: string }> }) {
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { story } = await params;
+  
+  const storyDefinition = getStoryDefinition(story)
   
   if (!storyDefinition) {
     notFound()
