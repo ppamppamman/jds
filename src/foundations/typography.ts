@@ -124,13 +124,13 @@ const typographyVariants = {
       fontSize: typographyTokens.fontSize.t2,
       lineHeight: typographyTokens.lineHeight.t4,
       fontWeight: typographyTokens.fontWeight.regular,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.secondary,
     },
     bold: {
       fontSize: typographyTokens.fontSize.t2,
       lineHeight: typographyTokens.lineHeight.t4,
       fontWeight: typographyTokens.fontWeight.bold,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.secondary,
     },
   },
   caption2: {
@@ -138,13 +138,13 @@ const typographyVariants = {
       fontSize: typographyTokens.fontSize.t1,
       lineHeight: typographyTokens.lineHeight.t4,
       fontWeight: typographyTokens.fontWeight.regular,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.secondary,
     },
     bold: {
       fontSize: typographyTokens.fontSize.t1,
       lineHeight: typographyTokens.lineHeight.t4,
       fontWeight: typographyTokens.fontWeight.bold,
-      color: colorVariants.semantic.text.primary,
+      color: colorVariants.semantic.text.secondary,
     },
   },
 } as const;
