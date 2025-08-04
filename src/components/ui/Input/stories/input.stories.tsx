@@ -301,13 +301,6 @@ export const SemanticColors: Story = {
           </div>
         </div>
       </div>
-
-      <div className="mt-6 p-4 bg-palette-gray-100 border border-palette-gray-400 rounded">
-        <p className="typography-body2">
-          <strong>시맨틱 컬러의 장점:</strong> 일관된 색상 체계로 사용자 경험이 향상되며, 
-          테마 변경이나 브랜드 컬러 업데이트 시 중앙에서 관리할 수 있습니다.
-        </p>
-      </div>
     </div>
   ),
   parameters: {
