@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/Button/Button';
 import Link from 'next/link'
 
 export default function Home() {
@@ -27,13 +28,18 @@ export default function Home() {
               href="/design-system"
               className="inline-flex items-center px-6 py-3 bg-semantic-primary text-semantic-text-white typography-body1-medium rounded-lg hover:bg-semantic-primary/90 transition-colors"
             >
-              Design System 보기 →
+              Design System 문서 보기 →
             </Link>
           </div>
 
           <div className="bg-semantic-text-white rounded-lg p-8 shadow-sm border border-semantic-border">
             <h2 className="typography-headline2-bold text-semantic-text-primary mb-4">
-              # Storybook
+              # Storybook 
+              <Button variant="link" asChild>
+                <a href="https://jds-storybook.vercel.app/" target="_blank">
+                  Storybook 문서 보기 →
+                </a>
+              </Button>
             </h2>
             <p className="typography-body2 text-semantic-text-secondary mb-6">
               모든 컴포넌트의 상세한 예시와 문서를 Storybook에서 확인할 수 있습니다.
