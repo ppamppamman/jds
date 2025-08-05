@@ -7,6 +7,12 @@ const components = [
     href: '/design-system/typography',
     storyCount: 15
   },
+  {
+    name: 'Colors',
+    description: '브랜드 컬러와 시맨틱 컬러를 포함한 일관된 색상 시스템을 제공합니다.',
+    href: '/design-system/colors',
+    storyCount: 12
+  },
 ]
 
 export default function DesignSystemPage() {
