@@ -51,7 +51,7 @@ export default function TypographyPage() {
         <h1 className="typography-headline1-bold mb-4">
           Typography
         </h1>
-        <p className="typography-body1 text-semantic-text-secondary max-w-3xl">
+        <p className="typography-body1 text-semantic-text-secondary w-[100%]">
           Typography 토큰 기반의 CSS 클래스를 직접 사용하여 일관된 텍스트 스타일을 적용합니다. 
           className에 typography-{'{variant}'} 또는 typography-{'{variant}'}-bold 형태로 사용할 수 있습니다.
         </p>

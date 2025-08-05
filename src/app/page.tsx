@@ -9,7 +9,7 @@ export default function Home() {
           <h1 className="typography-headline1-bold text-semantic-text-primary mb-4">
             디자인 시스템
           </h1>
-          <p className="typography-body1 text-semantic-text-secondary max-w-2xl mx-auto">
+          <p className="typography-body1 text-semantic-text-secondary mx-auto">
             컴포넌트 기반 디자인 시스템으로 재사용 가능한 UI 컴포넌트를 제공합니다.
             Next.js, TypeScript, TailwindCSS 를 활용했습니다.
           </p>

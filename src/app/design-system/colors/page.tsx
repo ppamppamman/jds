@@ -51,8 +51,8 @@ export default function ColorsPage() {
         <h1 className="typography-headline1-bold mb-4">
           Colors
         </h1>
-        <p className="typography-body1 text-semantic-text-secondary max-w-3xl">
-          브랜드 컬러와 시맨틱 컬러를 포함한 일관된 색상 시스템입니다. 
+        <p className="typography-body1 text-semantic-text-secondary w-[100%]">
+          브랜드 컬러와 시맨틱 컬러를 포함한 색상 시스템입니다. 
           각 컬러는 100부터 1000까지의 스케일로 제공되며, CSS 변수와 Tailwind 클래스로 사용할 수 있습니다.
         </p>
       </div>
