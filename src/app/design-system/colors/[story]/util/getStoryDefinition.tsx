@@ -211,14 +211,14 @@ const COMPREHENSIVE_STORIES = [
         <section>
           <h3 className="typography-headline3-bold mb-4">Semantic Colors</h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {Object.entries(colorVariants.semantic).filter(([key]) => key !== 'text' && key !== 'background' && key !== 'border').map(([key, color]) => (
+            {['primary' as const, 'secondary' as const, 'success' as const, 'warning' as const, 'error' as const].map((key) => (
               <div key={key} className="text-center">
                 <div 
                   className="w-full h-16 rounded border mb-2" 
-                  style={{ backgroundColor: color }}
+                  style={{ backgroundColor: colorVariants.semantic[key] }}
                 ></div>
                 <span className="typography-body2-bold capitalize">{key}</span>
-                <div className="typography-caption1 text-semantic-text-secondary">{color}</div>
+                <div className="typography-caption1 text-semantic-text-secondary">{colorVariants.semantic[key]}</div>
               </div>
             ))}
           </div>
