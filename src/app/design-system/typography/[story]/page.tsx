@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { StoryDefinitionWidget as StoryDefinition, } from './widgets/StoryDefinition'
-import { HeaderWidget as Header} from './widgets/Header'
-import { NavWidget as Nav } from './widgets/Nav'
-import { StoryDefinitionCodeWidget as StoryDefinitionCode } from './widgets/StoryDefinitionCode'
 
 import { generateStoryDefinitionStaticParams, getStoryDefinition, getStoryDefinitions } from './util/getStoryDefinition'
+import { StoryDefinitionCode } from '@/components/widgets/StoryDefinitionCode'
+import { StoryDefinitionHeader } from '@/components/widgets/StoryDefinitionHeader'
+import { StoryDefinitionBreadcrumbNav } from '@/components/widgets/StoryDefinitionBreadcrumbNav'
 
 const stories = getStoryDefinitions()
 
@@ -27,8 +27,15 @@ export default async function StoryPage({ params }: { params: Promise<{ story: s
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
-      <Nav name={storyDefinition.name} />
-      <Header name={storyDefinition.name} category={storyDefinition.category} description={storyDefinition.description} />
+      <StoryDefinitionBreadcrumbNav current={storyDefinition.name}>
+        <Link href="/design-system" className="hover:text-semantic-primary">
+          Design System
+        </Link>
+        <Link href="/design-system/typography" className="hover:text-semantic-primary">
+          Typography
+        </Link>
+      </StoryDefinitionBreadcrumbNav>
+      <StoryDefinitionHeader name={storyDefinition.name} category={storyDefinition.category} description={storyDefinition.description} />
 
       <div className="mb-12">
         <h2 className="typography-headline2-bold mb-6">Preview</h2>
