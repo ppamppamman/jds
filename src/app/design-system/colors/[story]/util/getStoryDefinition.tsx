@@ -1,4 +1,4 @@
-import { ColorStoryDefinition, SingleColorStoryDefinition, ComprehensiveColorStoryDefinition } from "../type"
+import { ColorStoryDefinition } from "../type"
 import colorVariants from "@/foundations/colors"
 
 const GREEN_PALETTE_STORY = {
